@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neural Network Visualization</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+<body>
+<div class="outer-container">
+    <div class="container">
+        <svg viewBox="0 0 600 600" width="600" height="600">
+            <g id="neural-network">
+            </g>
+        </svg>
+        <div class="controls">
+            <div class="input control">
+                <button class="btn btn-left" id="add-input" onclick="setData(0,-1)">
+                    <span class="material-symbols-rounded">expand_more</span>
+                </button>
+                <input onclick="this.select()" type="number" name="inputs" id="inputNum" min="1" max="9" step="1" value="3" onchange="setData(0);">
+                <button class="btn btn-right" id="remove-input" onclick="setData(0,1)">
+                    <span class="material-symbols-rounded">expand_less</span>
+                </button>
+            </div>
+            <div class="hidden control">
+                <button class="btn btn-left" id="add-hidden" onclick="setData(1,-1)">
+                    <span class="material-symbols-rounded">expand_more</span>
+                </button>
+                <input onclick="this.select()" type="number" name="hidden" id="hiddenNum" min="0" max="9" step="1" value="5" onchange="setData(1);">
+                <button class="btn btn-right" id="remove-hidden" onclick="setData(1,1)">
+                    <span class="material-symbols-rounded">expand_less</span>
+                </button>
+            </div>
+            <div class="output control">
+                <button class="btn btn-left" id="add-output" onclick="setData(2,-1)">
+                    <span class="material-symbols-rounded">expand_more</span>
+                </button>
+                <input onclick="this.select()" type="number" name="outputs" id="outputNum" min="1" max="9" step="1" value="2" onchange="setData(2);">
+                <button class="btn btn-right" id="remove-output" onclick="setData(2,1)">
+                    <span class="material-symbols-rounded">expand_less</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+</body>
+</html>
