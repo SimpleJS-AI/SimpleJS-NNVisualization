@@ -64,19 +64,19 @@ function generate(input, hidden, output) {
 
     innerHTML += '<g id="input-layer">'
     for (let i = 0; i < input; i++) {
-        innerHTML += `<circle cx="100" cy="${inputLayerPosY[i]}" r="20" stroke="${colors[1]}" stroke-width="4" fill="${colors[0]}" />`
+        innerHTML += `<circle cx="100" cy="${inputLayerPosY[i]}" r="20" stroke="${colors[2]}" stroke-width="4" fill="${colors[0]}" />`
     }
     innerHTML += '</g>'
 
     innerHTML += '<g id="hidden-layer">'
     for (let i = 0; i < hidden; i++) {
-        innerHTML += `<circle cx="300" cy="${hiddenLayerPosY[i]}" r="20" stroke="${colors[1]}" stroke-width="4" fill="${colors[0]}" />`
+        innerHTML += `<circle cx="300" cy="${hiddenLayerPosY[i]}" r="20" stroke="${colors[2]}" stroke-width="4" fill="${colors[0]}" />`
     }
     innerHTML += '</g>'
 
     innerHTML += '<g id="output-layer">'
     for (let i = 0; i < output; i++) {
-        innerHTML += `<circle cx="500" cy="${outputLayerPosY[i]}" r="20" stroke="${colors[1]}" stroke-width="4" fill="${colors[0]}" />`
+        innerHTML += `<circle cx="500" cy="${outputLayerPosY[i]}" r="20" stroke="${colors[2]}" stroke-width="4" fill="${colors[0]}" />`
     }
     innerHTML += '</g>'
 
