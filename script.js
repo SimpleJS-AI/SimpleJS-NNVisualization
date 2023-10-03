@@ -4,10 +4,10 @@
 // ******************
 
 const colors = [
-    '#a8c7fa',
-    '#062e6f',
-    '#004a77',
-    '#4880b0',
+    '#ffb3b3',
+    '#e3e3e3',
+    '#5f131b',
+    '#5f131b',
 ]
 
 function generate(input, hidden, output) {
@@ -41,7 +41,7 @@ function generate(input, hidden, output) {
     innerHTML += '<g id="input-hidden-weights-animated">'
     for (let i = 0; i < input; i++) {
         for (let j = 0; j < hidden; j++) {
-            innerHTML += `<path d="M 100 ${inputLayerPosY[i]} C 200 ${inputLayerPosY[i]}, 200 ${hiddenLayerPosY[j]}, 300 ${hiddenLayerPosY[j]}" stroke="${colors[2]}" stroke-width="3" fill="none" />`
+            innerHTML += `<path d="M 100 ${inputLayerPosY[i]} C 200 ${inputLayerPosY[i]}, 200 ${hiddenLayerPosY[j]}, 300 ${hiddenLayerPosY[j]}" stroke="${colors[1]}" stroke-width="4" fill="none" />`
         }
     }
     innerHTML += '</g>'
@@ -56,7 +56,7 @@ function generate(input, hidden, output) {
     innerHTML += '<g id="hidden-output-weights-animated">'
     for (let i = 0; i < hidden; i++) {
         for (let j = 0; j < output; j++) {
-            innerHTML += `<path d="M 300 ${hiddenLayerPosY[i]} C 400 ${hiddenLayerPosY[i]}, 400 ${outputLayerPosY[j]}, 500 ${outputLayerPosY[j]}" stroke="${colors[2]}" stroke-width="3" fill="none" />`
+            innerHTML += `<path d="M 300 ${hiddenLayerPosY[i]} C 400 ${hiddenLayerPosY[i]}, 400 ${outputLayerPosY[j]}, 500 ${outputLayerPosY[j]}" stroke="${colors[1]}" stroke-width="4" fill="none" />`
         }
     }
     innerHTML += '</g>'
