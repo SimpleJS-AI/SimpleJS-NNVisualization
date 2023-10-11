@@ -60,6 +60,49 @@ svg {
             animation: flash calc( random(40) / 10 + 4 ) + s forwards calc( random(80) / 10 ) + s infinite;
         }
     }
+    @for $i from 1 through 10 {
+        & #input-layer svg:nth-child(#{$i}) path{
+            transform: scale(.5) translate(8px, 8px);
+            d: path("M 0 20 C 0 9 9 0 20 0 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c 11 0 20 9 20 20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c 0 11 -9 20 -20 20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c -11 0 -20 -9 -20 -20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 Z");
+            transition: all 1s ease;
+            animation: transform 6s ease calc(random(60) / 10) + s infinite;
+        }
+    }
+    @for $i from 1 through 10 {
+        & #hidden-layer svg:nth-child(#{$i}) path{
+            transform: scale(.5) translate(8px, 8px);
+            d: path("M 0 20 C 0 9 9 0 20 0 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c 11 0 20 9 20 20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c 0 11 -9 20 -20 20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c -11 0 -20 -9 -20 -20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 Z");
+            transition: all 1s ease;
+            animation: transform 6s ease calc(random(60) / 10) + s infinite;
+        }
+    }
+    @for $i from 1 through 10 {
+        & #output-layer svg:nth-child(#{$i}) path{
+            transform: scale(.5) translate(8px, 8px);
+            d: path("M 0 20 C 0 9 9 0 20 0 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c 11 0 20 9 20 20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c 0 11 -9 20 -20 20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c -11 0 -20 -9 -20 -20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 Z");
+            transition: all 1s ease;
+            animation: transform 6s ease calc(random(60) / 10) + s infinite;
+        }
+    }
+}
+
+@keyframes transform{
+    0%{
+        d: path("M 0 20 C 0 9 9 0 20 0 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c 11 0 20 9 20 20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c 0 11 -9 20 -20 20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c -11 0 -20 -9 -20 -20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 Z");
+        transform: scale(.5) translate(8px, 8px);
+    }
+    20%{
+        d: path("M.887 14.467C-2.845 5.875 5.875-2.845 14.467.887l1.42.617a10.323 10.323 0 0 0 8.225 0l1.42-.617c8.593-3.732 17.313 4.988 13.581 13.58l-.617 1.42a10.323 10.323 0 0 0 0 8.225l.617 1.42c3.732 8.593-4.989 17.313-13.58 13.581l-1.42-.617a10.323 10.323 0 0 0-8.225 0l-1.42.617C5.874 42.845-2.846 34.125.886 25.533l.617-1.42a10.323 10.323 0 0 0 0-8.225l-.617-1.42Z");
+        transform: scale(.7) translate(0, 0);
+    }
+    40%{
+        d: path("M 0 20 C 0 9 9 0 20 0 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c 11 0 20 9 20 20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c 0 11 -9 20 -20 20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c -11 0 -20 -9 -20 -20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 Z");
+        transform: scale(.5) translate(8px, 8px);
+    }
+    100%{
+        d: path("M 0 20 C 0 9 9 0 20 0 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c 11 0 20 9 20 20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c 0 11 -9 20 -20 20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 c -11 0 -20 -9 -20 -20 l 0 0 a 10.323 10.323 0 0 0 0 0 l 0 0 Z");
+        transform: scale(.5) translate(8px, 8px);
+    }
 }
 
 @keyframes flash {

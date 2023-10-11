@@ -64,19 +64,24 @@ function generate(input, hidden, output) {
 
     innerHTML += '<g id="input-layer">'
     for (let i = 0; i < input; i++) {
-        innerHTML += `<circle cx="100" cy="${inputLayerPosY[i]}" r="20" stroke="${colors[2]}" stroke-width="4" fill="${colors[0]}" />`
+        // innerHTML += `<circle cx="100" cy="${inputLayerPosY[i]}" r="20" stroke="${colors[2]}" stroke-width="4" fill="${colors[0]}" />`
+        innerHTML += `<svg xmlns="http://www.w3.org/2000/svg" x="${100 -20 -8}" y="${inputLayerPosY[i] -20 -8}" width="80px" height="80px" viewBox="0 0 40 40" fill="none" class="mask"><path d="M.887 14.467C-2.845 5.875 5.875-2.845 14.467.887l1.42.617a10.323 10.323 0 0 0 8.225 0l1.42-.617c8.593-3.732 17.313 4.988 13.581 13.58l-.617 1.42a10.323 10.323 0 0 0 0 8.225l.617 1.42c3.732 8.593-4.989 17.313-13.58 13.581l-1.42-.617a10.323 10.323 0 0 0-8.225 0l-1.42.617C5.874 42.845-2.846 34.125.886 25.533l.617-1.42a10.323 10.323 0 0 0 0-8.225l-.617-1.42Z" fill="${colors[2]}" stroke-width="0" stroke-linecap="round"/></svg>`
     }
     innerHTML += '</g>'
 
     innerHTML += '<g id="hidden-layer">'
     for (let i = 0; i < hidden; i++) {
-        innerHTML += `<circle cx="300" cy="${hiddenLayerPosY[i]}" r="20" stroke="${colors[2]}" stroke-width="4" fill="${colors[0]}" />`
+        //innerHTML += `<circle cx="300" cy="${hiddenLayerPosY[i]}" r="20" stroke="${colors[2]}" stroke-width="4" fill="${colors[0]}" />`
+        innerHTML += `<svg xmlns="http://www.w3.org/2000/svg" x="${300 -20 -8}" y="${hiddenLayerPosY[i] -20 -8}" width="80px" height="80px" viewBox="0 0 40 40" fill="none" class="mask"><path d="M.887 14.467C-2.845 5.875 5.875-2.845 14.467.887l1.42.617a10.323 10.323 0 0 0 8.225 0l1.42-.617c8.593-3.732 17.313 4.988 13.581 13.58l-.617 1.42a10.323 10.323 0 0 0 0 8.225l.617 1.42c3.732 8.593-4.989 17.313-13.58 13.581l-1.42-.617a10.323 10.323 0 0 0-8.225 0l-1.42.617C5.874 42.845-2.846 34.125.886 25.533l.617-1.42a10.323 10.323 0 0 0 0-8.225l-.617-1.42Z" fill="${colors[2]}" stroke-width="0" stroke-linecap="round"/></svg>`
+
     }
     innerHTML += '</g>'
 
     innerHTML += '<g id="output-layer">'
     for (let i = 0; i < output; i++) {
-        innerHTML += `<circle cx="500" cy="${outputLayerPosY[i]}" r="20" stroke="${colors[2]}" stroke-width="4" fill="${colors[0]}" />`
+        //innerHTML += `<circle cx="500" cy="${outputLayerPosY[i]}" r="20" stroke="${colors[2]}" stroke-width="4" fill="${colors[0]}" />`
+        innerHTML += `<svg xmlns="http://www.w3.org/2000/svg" x="${500 -20 -8}" y="${outputLayerPosY[i] -20 -8}" width="80px" height="80px" viewBox="0 0 40 40" fill="none" class="mask"><path d="M.887 14.467C-2.845 5.875 5.875-2.845 14.467.887l1.42.617a10.323 10.323 0 0 0 8.225 0l1.42-.617c8.593-3.732 17.313 4.988 13.581 13.58l-.617 1.42a10.323 10.323 0 0 0 0 8.225l.617 1.42c3.732 8.593-4.989 17.313-13.58 13.581l-1.42-.617a10.323 10.323 0 0 0-8.225 0l-1.42.617C5.874 42.845-2.846 34.125.886 25.533l.617-1.42a10.323 10.323 0 0 0 0-8.225l-.617-1.42Z" fill="${colors[2]}" stroke-width="0" stroke-linecap="round"/></svg>`
+
     }
     innerHTML += '</g>'
 
